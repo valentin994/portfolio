@@ -28,7 +28,10 @@
               "node_modules/materialize-css/dist/css/materialize.css"
             ],
             "scripts": [
-              "node_modules/particle.js/src/particle.js"
+              "node_modules/particle.js/src/particle.js",
+              "node_modules/materialize-css/dist/js/materialize.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/hammerjs/hammer.js"
             ]
           },
           "configurations": {

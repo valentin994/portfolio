@@ -80,7 +80,7 @@ this.myParams = {
                     "mode": "bubble"
                   },
                   "onclick": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "remove"
                   },
                   "resize": true

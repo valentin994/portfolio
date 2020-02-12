@@ -1,0 +1,140 @@
+button {
+  display: inline-block;
+  margin: 15px;
+  padding: 20px 40px;
+  background: none;
+  font-size: 20px;
+  color: white;
+  border: 0;
+  letter-spacing: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  
+}
+
+button:hover{
+  color: #FF9806;
+  transition: 0.5s ease-in-out;
+}
+
+button span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.line-one {
+  border-top: 1px solid white;
+}
+
+.line-two {
+  border-right: 1px solid white;
+}
+
+.line-three {
+  border-bottom: 1px solid white;
+}
+
+.line-four {
+  border-left: 1px solid white;
+}
+
+
+.second{
+
+    .line-one {
+      animation-duration: 2s;
+      animation-name: one;
+      animation-iteration-count: infinite;
+    }
+    
+    .line-two {
+      animation-duration: 2s;
+      top: -100%;
+      animation-delay: 1s;
+      animation-name: four;
+      animation-iteration-count: infinite;
+    }
+    
+    .line-three {
+      animation-duration: 2s;
+      animation-name: three;
+      animation-iteration-count: infinite;
+    }
+    
+    .line-four {
+      animation-duration: 2s;
+      top: -100%;
+      animation-name: two;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  @keyframes one {
+    from {
+      left: -100%;
+      border-top: 1px solid white;
+    }
+  
+    to {
+      left: 100%;
+      border-top: 1px solid #FF9806;
+    }
+  }
+  
+  
+  
+  @keyframes two {
+    from {
+      bottom: -100%;
+      top: 100%;
+      border-left: 1px solid #FF9806;
+    }
+  
+    to {
+      bottom: 100%;
+      top: -100%;
+      border-left: 1px solid #FF9806;
+    }
+  }
+  
+  @keyframes three {
+    from {
+      right: -100%;
+      left: 100%;
+      border-bottom: 1px solid white;
+    }
+  
+    to {
+      right: 100%;
+      left: -100%;
+      border-bottom: 1px solid #FF9806;
+    }
+  }
+  
+  @keyframes four {
+    from {
+      top: -100%;
+      border-right: 1px solid #FF9806;
+
+    }
+  
+    to {
+      top: 100%;
+      border-right: 1px solid #FF9806;
+    }
+  }
+  
+
+  .material-icons{
+    font-size: 48px;
+  }
+
+  #seticon{
+    color: red;
+  }

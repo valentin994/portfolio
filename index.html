@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,9 @@
         <meta name="author" content="Valentin Vareskic">
         <meta name="keywords" content="Portfolio">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Portfolio</title>
     </head>
 
@@ -27,30 +27,49 @@
                 </div>
                 <div class="icons">
                     <div class="wrapper">
-                        <a href=""><img src="./images/GitHub-Mark-Light-120px-plus.png" alt="Github"></a>
+                        <a target="_blank" href="https://github.com/valentin994?tab=repositories"><img src="./images/GitHub-Mark-Light-120px-plus.png" alt="Github"></a>
                     </div>
                     <div class="wrapper">
-                        <a href=""><img src="./images/linkedin-3-512.png" alt="LinkedIn"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/valentin-vareskic-206107153/"><img src="./images/linkedin-3-512.png" alt="LinkedIn"></a>
                     </div>
                 </div>
                 <p style="font-size: 20px;padding-top: 20%;">Projects & Articles</p>
                 <span style="font-size: 40px;" class="material-icons">
                     keyboard_arrow_down
-                    </span>
+                </span>
             </div>
         </div>
         <div class="projects">
-            <div class="card">
+            <div data-aos="fade-up" class="card">
                 <p>Demand Forecast Using ML</p>
+                <p class="desc">Applying various methods on a kaggle dataset that contains sales values for 50 shops in the period of 2013-2017.
+                    Data is split from 2013-2016 and 2017 is used for testing. Metrics plotted with seaborn.
+                </p>
+                <a target="_blank" href="https://github.com/valentin994/demandForecast">Source Code</a>
             </div>
-            <div class="card">
+            <div data-aos="fade-right" class="card">
                 <p>Medium: Demand Forecast using Machine Learning with Python </p>
+                <p class="desc">Tutorial showing demand forecast predicting using Support Vector Machine from python scikit module.</p>
+                <a target="_blank" href="https://medium.com/vm-programming/demand-forecast-using-machine-learning-with-python-e8a4dca5aa0a">Link</a>
+            </div>
+            <div data-aos="fade-left" class="card">
+                <p>Course Platform </p>
+                <p class="desc">Platform dummy for learning python built with MEAN stack. User authentication with JWT implemented.</p>
+                <a target="_blank" href="https://github.com/valentin994/vlttecaj">Source Code</a>
+            </div>
+            <div data-aos="fade-up" class="card">
+                <p>Snake Game in Java</p>
+                <p class="desc">One of the most popular mobile games built in JAVA.</p>
+                <a target="_blank" href="https://github.com/valentin994/snake">Source Code</a>
+            </div>
+            <div data-aos="fade-right" class="card">
+                <p>iOS Looking Calculator</p>
+                <p class="desc">HTML/CSS with pure JS for making a iPhone calculator clone.</p>
+                <a target="_blank" href="https://github.com/valentin994/Vanilla-JS-Calculator">Source Code </a><a target="_blank" href="https://valentin994.github.io/Vanilla-JS-Calculator/">Online Demo</a>
             </div>
         </div>
-        <div class="projects">
-            <div class="card">iPhone Calculator Clone</div>
-            <div class="card">Java Snake</div>
-        </div>
+        
+        <script>  AOS.init();</script>
     </body>
 
 </html>

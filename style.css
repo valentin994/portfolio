@@ -98,3 +98,33 @@ img{
   -o-animation:     arrow-animation 1s infinite; 
   animation:        arrow-animation 1s infinite;
 }
+
+.projects{
+    height: 100vh;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.card{
+    min-height: 100px;
+    border-top: thin solid var(--primar-color);
+    width: 580px;
+    margin: 25px;
+    font-size: 24px;
+}
+
+.desc{
+    color: gray;
+    font-size: 16px;
+}
+
+.projects a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    transition: 200ms ease-in-out;
+}
+
+.projects a:hover{
+    color: var(--secondary-color);
+}

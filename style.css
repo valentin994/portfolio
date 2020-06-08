@@ -108,7 +108,7 @@ img{
 .card{
     min-height: 100px;
     border-top: thin solid var(--primar-color);
-    width: 580px;
+    width: 100%;
     margin: 25px;
     font-size: 24px;
 }

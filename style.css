@@ -128,3 +128,8 @@ img{
 .projects a:hover{
     color: var(--secondary-color);
 }
+
+a.disabled{
+    pointer-events: none;
+    cursor: default;
+}

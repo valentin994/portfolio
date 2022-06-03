@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import Sidebar from './components/Sidebar.vue'
+import Navigation from './components/Navigation.vue'
 </script>
 
 <template>
- <Sidebar />
+  <div class="h-screen bg-slate-500">
+    <Navigation />
+  </div>
 </template>
 

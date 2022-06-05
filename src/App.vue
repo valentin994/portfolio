@@ -1,8 +1,12 @@
 <script setup lang="ts">
-import Sidebar from './components/Sidebar.vue'
+import Menu from './components/Menu.vue'
+//TODO add main section component
+//TODO add dark/light theme
 </script>
 
 <template>
- <Sidebar />
+  <div class="bg-slate-200 h-screen">
+    <Menu />
+  </div>
 </template>
 

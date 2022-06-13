@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import Navigation from './components/Navigation.vue'
+import Menu from './components/Menu.vue'
+//TODO add main section component
+//TODO add dark/light theme
 </script>
 
 <template>
-  <div class="h-screen bg-slate-500">
-    <Navigation />
+  <div class="bg-slate-200 h-screen">
+    <Menu />
   </div>
 </template>
 

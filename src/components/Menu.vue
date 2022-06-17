@@ -1,15 +1,29 @@
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent } from 'vue'
 
-//TODO Add icons for github, linkedid, possible youtube
+export default defineComponent({
+  methods:{
+    toggleDarkMode(){
+      this.isDark = !this.isDark;
+      localStorage.setItem("darkMode", this.isDark);
+    }
+  },
+  data() {
+    let isDark = localStorage.getItem("darkMode") === true
+    return {
+      isDark,
+    }
+  },
+})
 </script>
 <template>
-  <div class="flex p-4">
+  <div class="flex p-4" :class="isDark ? 'dark' : ''">
     <div class="flex-none">
       <img alt="Valentin Vareskic logo" src="../assets/logo_nacrt.png" class="h-auto w-16"/>
     </div>
     <div class="flex-1"></div>
-
-    <ul class="flex flex-row-reverse p-4 justify-between border-black width-">
+    <button @click="toggleDarkMode">Toggle</button>
+    <ul class="flex flex-row-reverse p-4 justify-between border-black dark:text-white" >
       <li class="pl-2">Github</li>
       <li class="pl-2">LinkedIn</li>
       <li class="pl-2">About me</li>

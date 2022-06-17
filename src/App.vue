@@ -5,7 +5,7 @@ import Menu from './components/Menu.vue'
 </script>
 
 <template>
-  <div class="bg-slate-200 h-screen">
+  <div class="bg-slate-200 dark:slate-800 h-screen">
     <Menu />
   </div>
 </template>

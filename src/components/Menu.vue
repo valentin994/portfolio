@@ -1,18 +1,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-
+//TODO Create a button for changing the theme
 export default defineComponent({
-  methods:{
-    toggleDarkMode(){
-      this.isDark = !this.isDark;
-      localStorage.setItem("darkMode", this.isDark);
-    }
+  props:{
+    isDark: Boolean,
   },
-  data() {
-    let isDark = localStorage.getItem("darkMode") === true
-    return {
-      isDark,
-    }
+  setup(props){
+    props.isDark
   },
 })
 </script>
@@ -22,7 +16,7 @@ export default defineComponent({
       <img alt="Valentin Vareskic logo" src="../assets/logo_nacrt.png" class="h-auto w-16"/>
     </div>
     <div class="flex-1"></div>
-    <button @click="toggleDarkMode">Toggle</button>
+    <button @click="$emit('toggleDarkMode')">Toggle</button>
     <ul class="flex flex-row-reverse p-4 justify-between border-black dark:text-white" >
       <li class="pl-2">Github</li>
       <li class="pl-2">LinkedIn</li>
